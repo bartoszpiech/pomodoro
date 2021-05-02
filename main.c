@@ -110,13 +110,11 @@ int main(void)
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
-	  if (flag) {			// end of timer
-		  while (1) {
-			  set_leds(0);	// turn off all 6 leds
-			  HAL_Delay(1000);
-			  set_leds(63);	// turn on all 6 leds
-			  HAL_Delay(1000);
-			}
+	  if (flag) {		// end of timer
+		  set_leds(0);	// turn off all 6 leds
+		  HAL_Delay(1000);
+		  set_leds(63);	// turn on all 6 leds
+		  HAL_Delay(1000);
 	  }	  
   }
   /* USER CODE END 3 */
